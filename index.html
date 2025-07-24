@@ -1,92 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAMxKILLER - Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: white;
-        }
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(to right, #ff0000, #ff7300);
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        nav {
-            text-align: center;
-            background: #1a1a1a;
-            padding: 15px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #ff7300;
-        }
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .social a {
-            color: #ff7300;
-            font-size: 1.5em;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer {
-            background: #1a1a1a;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEAMxKILLER Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-    <header>
-        <h1>TEAMxKILLER</h1>
-        <p>Web Developer | Android Enthusiast</p>
-    </header>
-
+  <header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <div class="logo">TEAMxKILLER</div>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
     </nav>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I’m TEAMxKILLER, passionate about building modern web and mobile applications.</p>
-    </section>
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Web Developer & Gamer</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/shaik.muzammil.88888?igsh=bnJqMHB1cjdidTBi" target="_blank" aria-label="Instagram">
+          <img src="icons/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>This is a placeholder about me section. You can replace this text with your own bio.</p>
+  </section>
 
-    <section id="contact" class="social">
-        <h2>Contact Me</h2>
-        <a href="https://www.instagram.com/shaik.muzammil.88888?igsh=bnJqMHB1cjdidTBi" target="_blank">Instagram</a>
-    </section>
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-item">Project 1</div>
+      <div class="project-item">Project 2</div>
+      <div class="project-item">Project 3</div>
+    </div>
+  </section>
 
-    <footer>
-        © 2025 TEAMxKILLER | All Rights Reserved
-    </footer>
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via Instagram!</p>
+    <a href="https://www.instagram.com/shaik.muzammil.88888?igsh=bnJqMHB1cjdidTBi" target="_blank" class="btn">Instagram</a>
+  </section>
 
+  <footer>
+    <p>© 2025 TEAMxKILLER. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
