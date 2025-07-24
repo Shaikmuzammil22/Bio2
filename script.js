@@ -207,5 +207,20 @@ footer {
   }
   .menu-toggle {
     display: block;
+    .services-list {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  color: #ccc;
+  list-style: disc;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
   }
 }
