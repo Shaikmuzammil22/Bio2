@@ -1,39 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shaik Muzammil Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Muzammil | Developer Portfolio</title>
+  <style>
+    /* Import Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      animation: slideUp 1.5s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00f2fe;
+      border-bottom: 2px solid #4facfe;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      padding: 1rem;
+      border-radius: 10px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+      box-shadow: 0 0 15px #00f2fe;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #00f2fe;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #4facfe;
+      color: #fff;
+      box-shadow: 0 0 15px #4facfe;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <nav>
-      <div class="logo">Shaik Muzammil</div>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle">&#9776;</div>
-    </nav>
+    <h1>Shaik Muzammil</h1>
+    <p>Android Developer | Reverse Engineer | Game Modder</p>
   </header>
 
-  <!-- Hero Section with BGMI Background -->
-  <section id="home" class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Web Developer & Game Modder</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/shaik.muzammil.88888?igsh=bnJqMHB1cjdidTBi" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://t.me/TEAMxKILLER" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://wa.me/966510235812" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Android App Development (Java / AIDE)</div>
+      <div class="card">Reverse Engineering (APK / Smali / Native)</div>
+      <div class="card">Game Modding (BGMI / Loaders Bypass)</div>
+      <div class="card">Web Development (HTML / CSS / JS)</div>
     </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">BGMI Mod Loader</div>
+      <div class="card">String Loader Bypass</div>
+      <div class="card">Custom Ludo Game</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <a href="https://t.me/TEAMxCRACKING" target="_blank">Telegram</a>
+    <a href="https://www.instagram.com/shaik.muzammil.88888?igsh=bnJqMHB1cjdidTBi" target="_blank">Instagram</a>
+    <a href="https://github.com/shaikmuzammil22" target="_blank">GitHub</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Shaik Muzammil | All Rights Reserved
+  </footer>
+
+</body>
+</html>
   </section>
 
   <!-- About Section -->
