@@ -1,39 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+// Typing Effect for Tagline
+const text = "Android Developer | Reverse Engineer | Game Modder";
+let index = 0;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+function type() {
+  if (index < text.length) {
+    document.getElementById("typing-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(type, 100);
+  }
 }
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #0a0a0a;
-  color: #eee;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
-/* Header Navigation */
-header {
-  position: fixed;
-  width: 100%;
-  background: #111;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  padding: 15px 20px;
-}
-
+window.onload = type;
 .logo {
   font-weight: 600;
   font-size: 1.5rem;
