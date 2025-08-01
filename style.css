@@ -1,6 +1,131 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navUl = document.querySelector('nav ul');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-menuToggle.addEventListener('click', () => {
-  navUl.classList.toggle('active');
-});
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* BG Guns Container */
+#bg-guns {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.imgur.com/qFQx5gT.png'); /* BGMI guns silhouette image */
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.07;
+  animation: move-bg 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move-bg {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.neon-text {
+  font-size: 3rem;
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #00f2fe;
+}
+
+#typing-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+  min-height: 30px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1.5s ease;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00f2fe;
+  border-bottom: 2px solid #4facfe;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 0 20px #00f2fe;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #00f2fe;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  background: #4facfe;
+  color: #fff;
+  box-shadow: 0 0 15px #4facfe;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
